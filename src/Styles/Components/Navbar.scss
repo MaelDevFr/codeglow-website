@@ -1,0 +1,61 @@
+header {
+  height: 50vh;
+  background-color: $background-color;
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        list-style: none;
+        .link-navbar {
+          color: $link-color;
+          font-size: 90px;
+          padding: 0 80px 0 80px;
+          text-decoration: none;
+          transition: $transition-link;
+          padding-bottom: 0.3rem;
+          border-bottom: 4px transparent solid;
+
+          &:hover {
+            border-color: $hover-color;
+            letter-spacing: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.title {
+  font-size: 95px;
+  background: -webkit-linear-gradient($text-color, $title-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  top: 135px;
+}
+.title2 {
+  font-size: 95px;
+  background: -webkit-linear-gradient($basic-color, $background-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  top: 135px;
+}
+
+.callToActionContainer {
+  background: url("../../../public/bg.png");
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
